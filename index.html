@@ -10,47 +10,60 @@
 <body>
 
 <header>
-    Totul despre fotbal
+    <span id="clock1"></span>
+    <span class="titlu">Totul despre fotbal</span>
+    <span id="clock"></span>
 </header>
 
 <div class="continut">
     <div class="buttons">
         <a href="istoria ftbl.html"><button>Istoria fotbalului</button></a>
-        <a href="Champions League.html"><button>Champions League</button></a>
         <a href="World Cup.html"><button>World Cup</button></a>
         <a href="Messi.html"><button>Lionel Messi</button></a>
+        <div class="dropdown">
+            <button class="dropbtn">Ligi</button>
+            <div class="dropdown-content">
+                <a href="pl.html">Premier League</a>
+                <a href="ll.html">La Liga</a>
+                <a href="seriaa.html">Serie A</a>
+                <a href="bl.html">Bundesliga</a>
+                <a href="l1.html">Ligue 1</a>
+                <a href="Champions League.html">UEFA Champions League</a>
+                <a href="eul.html">UEFA Europa League</a>
+                <a href="conl.html">UEFA Europa Conference League</a>
+            </div>
+        </div>
     </div>
 
     <div id="info">
         <h2 align="center" style="font-size: 3em;">O mică introducere despre fotbal. Cum se joacă, etc.</h2>
-        
         <p>
             Fotbalul se joacă conform Legilor Jocului, cu două echipe de câte 11 jucători care încearcă să introducă mingea în poarta adversă. Echipa care înscrie mai multe goluri câștigă, iar dacă scorul este egal, meciul se termină la egalitate. 
             Mingea nu poate fi atinsă cu mâna, cu excepția portarului sau la aruncările de la margine (aut). Jucătorii se pot folosi de orice parte a corpului pentru a controla mingea.
             Jocul include driblingul, pasarea și șutul, iar echipa adversă poate recupea mingea prin interceptări sau deposedări. Contactul fizic este limitat. Jocul se oprește atunci când mingea părăsește terenul sau când arbitrul fluieră, iar reluarea se face prin auturi, cornere sau lovituri de la 11 metri.
         </p>
-
         <p>
             În 2011, <a href="Messi.html"><b>Lionel Messi</b></a> a fost desemnat cel mai bun fotbalist al anului.
         </p>
-
         <div class="pozitie-imagine">
             <img src="images/izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg" alt="Fotbal" class="fotbal-imagine">
         </div>
-
         <h2 id="pozitii">Pozitiile specifice fotbalului</h2>
         <ul style="padding-left: 25px; font-size: 1.5em;">
             <li>fundaș - jucător specializat în prevenirea încercărilor de a marca ale adversarilor</li>
             <li>mijlocașul - jucător care organizează jocul ofensiv al echipei și oferă pase decisive atacanților; totodată el ajută apărătorii, încercând să oprească atacurile adverse încă de la început</li>
             <li>atacantul - jucător al cărui principal rol este acela de a marca goluri</li>
         </ul><br>
-      
     </div>
 </div>
+
+<button onclick="scrollToTop()" id="topBtn" title="Înapoi sus">↑</button>
 
 <footer>
     <p>&copy; 2025 Totul despre fotbal. Toate drepturile rezervate.</p>
 </footer>
+
+<script src="JS/index.js"></script>
 
 </body>
 </html>

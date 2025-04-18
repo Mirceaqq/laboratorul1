@@ -10,21 +10,36 @@
 <body>
 
 <header>
-    Despre Champions League
+    <span id="clock1"></span>
+    <span class="titlu">Champions League</span>
+    <span id="clock"></span>
 </header>
 
 <div class="continut">
-
-
     <div class="buttons">
         <a href="istoria ftbl.html"><button>Istoria fotbalului</button></a>
-        <a href="index.html"><button>Inapoi</button></a>
         <a href="World Cup.html"><button>World Cup</button></a>
         <a href="Messi.html"><button>Lionel Messi</button></a>
+        <div class="dropdown">
+            <button class="dropbtn">Ligi</button>
+            <div class="dropdown-content">
+                <a href="pl.html">Premier League</a>
+                <a href="ll.html">La Liga</a>
+                <a href="seriaa.html">Serie A</a>
+                <a href="bl.html">Bundesliga</a>
+                <a href="l1.html">Ligue 1</a>
+                <a href="index.html">Inapoi</a>
+                <a href="eul.html">UEFA Europa League</a>
+                <a href="conl.html">UEFA Europa Conference League</a>
+            </div>
+        </div>
     </div>
 
     <div id="info">
 
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="images/cl_logo-removebg-preview.png" alt="La Liga Logo" style="width: 180px; height: auto;">
+        </div>
         <h2>Ce este UEFA Champions League?</h2>
         <p>UEFA Champions League este cea mai importantă competiție inter-cluburi din Europa. Fondată în 1955, atrage cele mai bune echipe din fiecare campionat național.</p>
 
@@ -60,10 +75,12 @@
 
     </div>
 </div>
+<button onclick="scrollToTop()" id="topBtn" title="Înapoi sus">↑</button>
 
 <footer>
     <p>&copy; 2025 Totul despre fotbal. Toate drepturile rezervate.</p>
 </footer>
+<script src="JS/cl.js"></script>
 
 </body>
 </html>

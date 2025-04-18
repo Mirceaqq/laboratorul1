@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totul despre fotbal - Lionel Messi</title>
+    <title>Totul despre fotbal</title>
     <link rel="stylesheet" href="CSS/messi.css">
     <link rel="icon" type="image/jpg" href="/images/goldan bol.jpg">
 </head>
 <body>
 
 <header>
-    Lionel Messi - Regele fotbalului
+    <span id="clock1"></span>
+    <span class="titlu">Lionel Messi - Regele fotbalului</span>
+    <span id="clock"></span>
 </header>
 
 <div class="continut">
     <div class="buttons">
-       <a href="istoria ftbl.html"><button>Istoria fotbalului</button></a>
-        <a href="Champions League.html"><button>Champions League</button></a>
+        <a href="istoria ftbl.html"><button>Istoria fotbalului</button></a>
         <a href="World Cup.html"><button>World Cup</button></a>
         <a href="index.html"><button>Inapoi</button></a>
+        <div class="dropdown">
+            <button class="dropbtn">Ligi</button>
+            <div class="dropdown-content">
+                <a href="pl.html">Premier League</a>
+                <a href="ll.html">La Liga</a>
+                <a href="seriaa.html">Serie A</a>
+                <a href="bl.html">Bundesliga</a>
+                <a href="l1.html">Ligue 1</a>
+                <a href="Champions League.html">UEFA Champions League</a>
+                <a href="eul.html">UEFA Europa League</a>
+                <a href="conl.html">UEFA Europa Conference League</a>
+            </div>
+        </div>
     </div>
 
     <div id="info">
@@ -58,10 +72,12 @@
         </div>
     </div>
 </div>
+<button onclick="scrollToTop()" id="topBtn" title="Înapoi sus">↑</button>
 
 <footer>
     <p>&copy; 2025 Totul despre fotbal. Toate drepturile rezervate.</p>
 </footer>
+<script src="JS/messi.js"></script>
 
 </body>
 </html>

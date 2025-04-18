@@ -10,15 +10,29 @@
 <body>
 
 <header>
-    Istoria si inceputul fotbalului
+    <span id="clock1"></span>
+    <span class="titlu">Istoria si inceputul fotbalului</span>
+    <span id="clock"></span>
 </header>
 
 <div class="continut">
     <div class="buttons">
-       <a href="index.html"><button>Inapoi</button></a>
-        <a href="Champions League.html"><button>Champions League</button></a>
+        <a href="index.html"><button>Inapoi</button></a>
         <a href="World Cup.html"><button>World Cup</button></a>
         <a href="Messi.html"><button>Lionel Messi</button></a>
+        <div class="dropdown">
+            <button class="dropbtn">Ligi</button>
+            <div class="dropdown-content">
+                <a href="pl.html">Premier League</a>
+                <a href="ll.html">La Liga</a>
+                <a href="seriaa.html">Serie A</a>
+                <a href="bl.html">Bundesliga</a>
+                <a href="l1.html">Ligue 1</a>
+                <a href="Champions League.html">UEFA Champions League</a>
+                <a href="eul.html">UEFA Europa League</a>
+                <a href="conl.html">UEFA Europa Conference League</a>
+            </div>
+        </div>
     </div>
     <div id="info">
         <p>
@@ -26,7 +40,7 @@
             Fotbalul are rădăcini care datează de peste 2000 de ani, iar în 2004, FIFA a recunoscut China ca locul de naștere al fotbalului, unde, în jurul anului 200 î.e.n., era practicat un sport asemănător numit *cuju*. De-a lungul vremii, regulile acestui sport au evoluat, iar fotbalul modern a apărut treptat.
             În prezent, fotbalul este cel mai popular sport din lume, cu peste 250 de milioane de jucători activi în mai mult de 200 de țări. Popularitatea sa este susținută de regulile simple, dar captivante și de faptul că echipamentele necesare pentru a-l practica sunt reduse și accesibile. Fotbalul nu doar că este o activitate fizică, dar este și un fenomen cultural global, care stârnește pasiuni imense și joacă un rol semnificativ în viața fanilor, a comunităților și a națiunilor. Acesta este adesea denumit „sportul rege”, datorită impactului său global.
         <br>
-        <img src="images/download.jpg" alt="Fotbal" >
+        <img src="images/download.jpg" alt="Fotbal" style="display: block; margin: 0 auto; height: 10em;" >
         <h1 align="center">Prima minge de fotbal</h1>
         <p>În anul 1863, Federația Engleză de Fotbal a stabilit primele specificații pentru mingile de fotbal. Înainte de aceasta, mingile erau realizate din vezica animalelor umflată, cu o acoperire din piele pentru a le ajuta să își păstreze forma.
 
@@ -43,10 +57,12 @@
     
     </div>
 </div>
+<button onclick="scrollToTop()" id="topBtn" title="Înapoi sus">↑</button>
 
 <footer>
     <p>&copy; 2025 Totul despre fotbal. Toate drepturile rezervate.</p>
 </footer>
+<script src="JS/istoria ftbl.js"></script>
 
 </body>
 </html>
